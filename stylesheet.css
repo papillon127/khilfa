@@ -1303,8 +1303,28 @@ audio {
 
 
     /*controlling tablet width*/
-    @media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
+   /* Gaya untuk layar tablet (maksimal 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 15px;
     }
+}
+
+/* Gaya untuk layar HP (maksimal 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Gaya untuk layar HP kecil (maksimal 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
